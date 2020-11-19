@@ -1,0 +1,99 @@
+/* Set variables in root */
+:root {
+    /* color variables */
+    --light-grey: #cccccc;
+    --mid-grey: #bbbbbb;
+    --dark-grey: #aaaaaa;
+    --darkest-grey: #808080;
+
+    --light-yellow: #ebddaf;
+    --dark-yellow: #ffa500; 
+    --light-yellow-transparent: #ebddaf50;
+    --dark-yellow-transparent: #ffa60050; 
+
+    --light-red: #ebafaf;
+    --dark-red: #ff0000; 
+    --light-red-transparent: #ebafaf50;
+    --dark-red-transparent: #ff000050; 
+
+    --light-blue: #afb0eb;
+    --dark-blue: #006eff; 
+    --light-blue-transparent:#afb0eb50;
+    --dark-blue-transparent: #006eff50; 
+
+
+    --neu-font:'Fredoka One', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background: var(--mid-grey);
+    text-align: center;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* CSS for button begins here:  */
+
+.neu-button {
+    height: 160px;
+    width: 160px;
+    margin: 1em;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px var(--dark-grey), -5px -5px 5px var(--light-grey);
+    background: var(--mid-grey);
+    font: var(--neu-font);
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--darkest-grey);
+    text-shadow: 1px 1px 2px var(--light-grey);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+    transition: box-shadow 1s, text-shadow 1s, color 1s, background-clip 1s, -webkit-background-clip 1s, -moz-background-clip 1s;
+}
+
+
+/* Create yellow glow effect */
+
+.yellow:hover {
+    box-shadow: 5px 5px 30px var(--dark-yellow), -5px -5px 10px var(--light-yellow), inset  5px 5px 5px var(--light-yellow-transparent), inset -5px -5px 10px var(--dark-yellow-transparent);
+
+    transition: box-shadow 1s, text-shadow 1s, color 1s, background-clip 1s, -webkit-background-clip 1s, -moz-background-clip 1s;
+}
+
+/* Create red glow effect */
+
+.red:hover {
+    box-shadow: 5px 5px 30px var(--dark-red), -5px -5px 10px var(--light-red), inset  5px 5px 5px var(--light-red-transparent), inset -5px -5px 10px var(--dark-red-transparent);
+
+    transition: box-shadow 1s, text-shadow 1s, color 1s, background-clip 1s, -webkit-background-clip 1s, -moz-background-clip 1s;
+}
+
+/* Create blue glow effect */
+
+.blue:hover {
+    box-shadow: 5px 5px 30px var(--dark-blue), -5px -5px 10px var(--light-blue), inset  5px 5px 5px var(--light-blue-transparent), inset -5px -5px 10px var(--dark-blue-transparent);
+
+    transition: box-shadow 1s, text-shadow 1s, color 1s, background-clip 1s, -webkit-background-clip 1s, -moz-background-clip 1s;
+}
+
+.neu-button:active {
+    box-shadow: -5px -5px 5px var(--dark-grey), 5px 5px 5px var(--light-grey);
+    color: var(--darkest-grey);
+}
+
